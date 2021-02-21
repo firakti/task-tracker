@@ -1,0 +1,28 @@
+$tile-size: 3em;
+$modal-width: 60vh;
+
+
+$duration: 0.6s;
+$easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$type-small: $tile-size / 4;
+$type-normal: $tile-size / 3;
+$type-large: $tile-size / 2.5;
+
+
+/*
+COLORS
+*/
+$color-overdue: #A32C68;
+$color-white:#fbfbf2;
+$color-done: #52C6A2;
+$color-white-darken: #DDDFE4;
+$primary-color:#52C6A2;
+$danger-color:#D6306D;
+$info-color:#007bff;
+$color-action: #A32C68;
+$color-action-low: #3FA1DB;
+$color-white-dark: #DDDFE4;
+$color-white-light: #fdfdfb;
+$calendar-background: #fbfbf2;
+$font-color: #2c3e50

@@ -1,0 +1,35 @@
+@import "../../style/style.scss";
+
+
+
+.add-task-modal {
+	top: 50%;
+}
+
+
+.task-input {
+	margin-bottom: 4px;
+}
+.sub-task-edit {
+	left: 7%;
+	width: 93%;
+	margin-bottom: 4px;
+	padding: 7px;
+	font-size: $type-normal * 0.8;
+}
+.button-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	&:first {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.save-button {
+	width: 100px;
+}

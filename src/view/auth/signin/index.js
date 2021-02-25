@@ -9,7 +9,6 @@ import Landing from "view/auth/parts/landing";
 const SignIn = () => {
   const [state, pushState] = useStateWithPush({});
   const authService = new AuthService();
-  const history = useHistory();
   return <div className="auth-page-container">
     <Landing></Landing>
     <div className="signin flex-column flex-align-center">

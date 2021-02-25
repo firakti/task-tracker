@@ -13,8 +13,6 @@ const SignIn = ({ onSignIn, errors, }) => {
   const handleChange = e => {
     const { name, value } = e.target;
     setInputs(prev => ({ ...prev, [name]: value }));
-    // TODO delete
-    // console.log(inputs)
   }
 
   return (

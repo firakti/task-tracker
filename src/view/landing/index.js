@@ -4,7 +4,7 @@ const Landing = () => {
     const landingContent = {
         appName: "task tracker",
         subtitle: "simplify task tracking",
-        description: " just allows you to keep track of your goals or tasks that are recurring periodically.",
+        description: "allows you to keep track of your goals or tasks that are recurring periodically.",
         mail: "",
     }
 

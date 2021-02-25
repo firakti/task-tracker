@@ -17,7 +17,8 @@ const SignIn = () => {
         onSignIn={
           ({ email, password }) =>
             AuthPresenter.signIn(
-              { authService, email, password },
+              {email, password },
+              authService,
               pushState,
             )
         }

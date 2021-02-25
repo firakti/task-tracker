@@ -7,6 +7,9 @@ https://task-check-6db15.web.app/
 - firestore for storage
 
 ## todo
+-  fix bugs
+   - task edit
+   - login after task
 -  add achievement page, at least github like activity heatmap
 -  task versioning
 -  export user data

@@ -14,7 +14,7 @@ const Landing = () => {
             <h2 className="sub-title">{landingContent.subtitle}</h2>
             <span className="description emphasis">{landingContent.appName}</span>
             <span className="description">{landingContent.description}</span>
-            <img src="image.png"></img>
+            <img src="image.png" alt="app of ss"></img>
         </div>
     )
 }

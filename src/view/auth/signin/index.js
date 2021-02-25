@@ -3,7 +3,7 @@ import AuthService from "services/auth";
 import { useStateWithPush } from "utils/handler";
 import AuthPresenter from "view/auth/presenter";
 import SignInView from "view/auth/parts/signin"
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Landing from "view/auth/parts/landing";
 
 const SignIn = () => {
@@ -19,7 +19,6 @@ const SignIn = () => {
               {email, password },
               authService,
               pushState,
-              history,
             )
         }
         errors={state.errors}>

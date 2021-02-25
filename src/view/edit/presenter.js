@@ -29,6 +29,8 @@ const editPresenter = {
         isEditTaskVisible: false,
       });
     }
+    // TODO delete reload call load calendar function
+    window.location.reload();
   },
 
 
@@ -57,6 +59,8 @@ const editPresenter = {
       selectedTask: {},
       isEditTaskVisible: false,
     });
+    // TODO delete reload call load calendar function
+    window.location.reload();
   }
 };
 

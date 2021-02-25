@@ -6,17 +6,19 @@ const authPresenter = {
             pushState({ errors: [result.errors] });
         }
     },
-    async signIn({ email, password }, authService, pushState) {
+    async signIn({ email, password }, authService, pushState,) {
         const result = await authService.signIn(email, password);
         if (!result.ok) {
             pushState({ errors: [result.errors] });
         }
+        window.location.reload(); 
     },
     async signUp({ email, password, passwordAgain }, authService, pushState) {
         const result = await authService.signUp(email, password, passwordAgain);
         if (!result.ok) {
             pushState({ errors: [result.errors] });
         }
+        window.location.reload(); 
     },
 };
 

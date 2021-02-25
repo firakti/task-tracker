@@ -1,30 +1,30 @@
 import React from "react";
 import AuthService from "services/auth";
 import { useStateWithPush } from "utils/handler";
-import AuthPresenter from "../presenter";
-import SignInView from "./../parts/signin"
+import AuthPresenter from "view/auth/presenter";
+import SignInView from "view/auth/parts/signin"
 import { Link } from 'react-router-dom'
-import Landing from "../../landing";
+import Landing from "view/auth/parts/landing";
 
 const SignIn = () => {
   const [state, pushState] = useStateWithPush({});
   const authService = new AuthService();
-
   return <div className="auth-page-container">
     <Landing></Landing>
-    <SignInView
-      onSignIn={
-        ({ email, password }) =>
-          AuthPresenter.signIn(
-            { authService, email, password },
-            pushState,
-          )
-      }
-      errors={state.errors}>
-    </SignInView>
-    <div className="flex-column">
-      {/* <Link to='/passwordrecovery' > forgot password</Link> */}
-      <Link to='/signup' > create new account</Link>
+    <div className="signin flex-column flex-align-center">
+      <SignInView
+        onSignIn={
+          ({ email, password }) =>
+            AuthPresenter.signIn(
+              {email, password },
+              authService,
+              pushState,
+            )
+        }
+        errors={state.errors}>
+      </SignInView>
+
+      <Link className="link-new-account" to='/signup' > create new account</Link>
     </div>
   </div>
 }
